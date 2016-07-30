@@ -11,8 +11,11 @@ function setupSerializer(make, response) {
     if (data.toJSON && typeof data.toJSON === 'function') {
       data = data.toJSON();
     }
+    const pluralizeType = Array.isArray(data);
 
-    const json = new JsonApiSerializer(type, serializer).serialize(data);
+    const options = Object.assign({}, serializer, { pluralizeType });
+
+    const json = new JsonApiSerializer(type, options).serialize(data);
 
     response.status(statusCode).json(json);
   };
