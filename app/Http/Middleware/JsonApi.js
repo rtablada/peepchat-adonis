@@ -13,7 +13,7 @@ function setupSerializer(make, response) {
     }
     const pluralizeType = Array.isArray(data);
 
-    const options = Object.assign({}, serializer, { pluralizeType });
+    const options = Object.assign({}, serializer, { pluralizeType }); // {...serializer, { pluralizeType }}
 
     const json = new JsonApiSerializer(type, options).serialize(data);
 
