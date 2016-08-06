@@ -16,18 +16,9 @@ const path = require('path');
 const packageFile = path.join(__dirname, '../package.json');
 require('./extend');
 
-const co = require('co');
-const parallel = require('co-parallel');
-
-const arrayOfProviders = fold.Registrar.mapProviders(app.providers);
-
-const startIoC = co(function * () {
-  return yield parallel(fold.Registrar.registerProviders(arrayOfProviders));
-  // return yield parallel(Registrar.bootProviders(arrayOfProviders))
-});
-
 module.exports = function (callback) {
-  startIoC
+  fold.Registrar
+    .register(app.providers)
     .then(() => {
       /*
       |--------------------------------------------------------------------------
@@ -51,14 +42,9 @@ module.exports = function (callback) {
       |
       */
       const Helpers = use('Helpers');
-      Helpers.load(packageFile, fold.Ioc);
-    })
-    .then(() => co(function * () {
-      return yield parallel(fold.Registrar.bootProviders(arrayOfProviders));
-    }))
-    .then(() => {
-      const Helpers = use('Helpers');
       const Env = use('Env');
+      Helpers.load(packageFile, fold.Ioc);
+
       /*
       |--------------------------------------------------------------------------
       | Register Events

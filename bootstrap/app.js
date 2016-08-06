@@ -28,8 +28,6 @@ const providers = [
   'adonis-lucid/providers/LucidProvider',
   'adonis-middleware/providers/AppMiddlewareProvider',
   'adonis-auth/providers/AuthManagerProvider',
-  // 'adonis-jsonapi/providers/JsonApiProvider',
-  `${__dirname}/providers/json-api`,
 ];
 
 /*

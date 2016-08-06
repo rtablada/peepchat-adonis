@@ -62,6 +62,11 @@ Route.group('api', () => {
     }
   });
 
+  Route.get('/test', function * (request, response) {
+    request.jsonApi.assertId(1);
+    response.send('foo');
+  });
+
   Route.get('/user/current', function * (request, response) {
     const user = request.authUser;
 

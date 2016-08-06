@@ -19,6 +19,7 @@
     "adonis-lucid": "^3.0.2",
     "adonis-middleware": "^1.0.6",
     "jsonapi-serializer": "^3.3.0",
+    "lodash.pick": "^4.3.0",
     "pg": "^6.0.3",
     "youch": "^1.0.1"
   },

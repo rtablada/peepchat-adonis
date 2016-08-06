@@ -24,7 +24,8 @@
       "dependencies": {
         "acorn": {
           "version": "3.3.0",
-          "from": "acorn@>=3.0.4 <4.0.0"
+          "from": "acorn@3.3.0",
+          "resolved": "https://registry.npmjs.org/acorn/-/acorn-3.3.0.tgz"
         }
       }
     },
@@ -638,7 +639,8 @@
         },
         "minimist": {
           "version": "0.0.8",
-          "from": "minimist@0.0.8"
+          "from": "minimist@0.0.8",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-0.0.8.tgz"
         },
         "mkdirp": {
           "version": "0.5.1",
@@ -664,7 +666,8 @@
     },
     "eslint-config-rtablada": {
       "version": "2.0.0",
-      "from": "eslint-config-rtablada@latest"
+      "from": "eslint-config-rtablada@2.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-rtablada/-/eslint-config-rtablada-2.0.0.tgz"
     },
     "eslint-plugin-react": {
       "version": "4.3.0",
@@ -1506,7 +1509,8 @@
       "dependencies": {
         "glob": {
           "version": "7.0.5",
-          "from": "glob@>=7.0.3 <8.0.0"
+          "from": "glob@7.0.5",
+          "resolved": "https://registry.npmjs.org/glob/-/glob-7.0.5.tgz"
         }
       }
     },
@@ -1997,6 +2001,11 @@
       "from": "lodash.padstart@>=4.1.0 <5.0.0",
       "resolved": "https://registry.npmjs.org/lodash.padstart/-/lodash.padstart-4.6.0.tgz"
     },
+    "lodash.pick": {
+      "version": "4.3.0",
+      "from": "lodash.pick@latest",
+      "resolved": "https://registry.npmjs.org/lodash.pick/-/lodash.pick-4.3.0.tgz"
+    },
     "lodash.restparam": {
       "version": "3.6.1",
       "from": "lodash.restparam@>=3.0.0 <4.0.0",
@@ -2187,6 +2196,11 @@
       "version": "1.4.7",
       "from": "node-uuid@>=1.4.7 <2.0.0",
       "resolved": "https://registry.npmjs.org/node-uuid/-/node-uuid-1.4.7.tgz"
+    },
+    "nodemon": {
+      "version": "1.10.0",
+      "from": "nodemon@>=1.9.1 <2.0.0",
+      "resolved": "https://registry.npmjs.org/nodemon/-/nodemon-1.10.0.tgz"
     },
     "nopt": {
       "version": "1.0.10",
@@ -2921,7 +2935,8 @@
         },
         "mkdirp": {
           "version": "0.5.1",
-          "from": "mkdirp@>=0.5.1 <0.6.0"
+          "from": "mkdirp@0.5.1",
+          "resolved": "https://registry.npmjs.org/mkdirp/-/mkdirp-0.5.1.tgz"
         }
       }
     },
