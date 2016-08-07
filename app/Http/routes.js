@@ -73,5 +73,5 @@ Route.group('api', () => {
     response.jsonApi('User', user);
   }).middleware('auth');
 
-  Route.resource('/rooms', 'RoomController');
+  Route.resource('/rooms', 'RoomController').middleware('auth');
 }).prefix('/api');
